@@ -1,0 +1,940 @@
+/* reset */
+*::after,
+*::before,
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+body{
+margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Macondo&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+/* ===== HEADER ===== */
+
+.header{
+    max-width: 100%;
+    height: 92px;
+    background-color: #F3F3F4;
+
+    padding: 0 69px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    margin-right: 10px;
+}
+
+.logoDescription{
+    width: 157px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 120%;
+    color: rgba(12, 18, 25, 0.3);
+}
+.menu{
+    width: 721px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 33px;
+}
+
+.menu a{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 140%;
+    color: #5C49DD;
+    text-decoration: none;
+}
+
+.search img{
+    margin-right: 8px;
+}
+
+/* ===== MAIN ===== */
+
+.container{
+    width: 1145px;
+    margin: auto;
+}
+
+/* button */
+
+.btnBlack{
+    text-decoration: none;
+    color: black;
+    padding: 16px 36px;
+    border: 2px solid black;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    width: 225px;
+    text-align: center;
+}
+
+.btnPurple{
+    text-decoration: none;
+    color: #5C49DD;
+    padding: 16px 36px;
+    border: 2px solid #5C49DD;
+    margin: auto;
+}
+
+/* === News === */
+
+.News{
+    padding-top: 35px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;  
+}
+
+.newsBlock{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsItem{
+    height: 539px;
+    width: 360px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    padding: 32px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.newsItem1{
+    background-color: #C4D502;
+}
+
+.newsItem1 img{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+
+.newsItem2{
+    background-color: #F0D02B;
+}
+.newsItem2 img{
+    bottom: 12px;
+    right: 0;
+    position: absolute;
+}
+
+
+.newsItem3{
+    margin-right: 0 !important;
+    background-color: #5C49DD;
+}
+.newsItem3 img{
+    bottom: 0px;
+    right: 0;
+    position: absolute;
+}
+
+
+.newsItem4{
+    width: 751px;
+    background-color: #5399EA;
+    justify-content: flex-end;
+    
+}
+.newsItem4 img{
+    top: 27px;
+    right: 22px;
+    position: absolute;
+}
+
+
+.newsItem5{
+    width: 361px;
+    margin-right: 0 !important;
+    background-color: #46E193;
+}
+.newsItem5 img{
+    top: 0px;
+    right: 0px;
+    position: absolute;
+}
+
+/* === text decoration for news === */
+
+.newsTexts{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    position: relative;
+    z-index: 100;
+}
+
+.newsHeadings{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 100;
+}
+
+.newsDates{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: rgba(12, 18, 25, 0.4);
+    position: relative;
+    z-index: 100;
+}
+
+.News h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+
+.newsDate3{
+    color: rgba(255, 255, 255, 0.4);
+}
+.newsHeading3, .newsText3{
+    color: #FFFFFF;
+}
+
+.newsHeading4, .newsText4{
+    color: #FFFFFF;
+    width: 426px;
+}
+
+/* === About ===*/
+
+.About{
+    padding: 32px 0 25px;
+}
+
+.About h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+/* === statistic ===*/
+
+.statistic{
+    display: flex;
+    margin-top: 32px;
+}
+
+.statItem{
+    width: 163px;
+    margin-right: 31px;
+}
+
+.statistic .statItem:last-child{
+    margin-right: 0;
+}
+
+.statItem h4{
+    color: #5C49DD;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.statItem p{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+/* === desription === */
+
+.Description{
+    display: flex;
+    margin-top: 66px;
+}
+
+/* img */
+.descriptionImg{
+    margin-right: 128px;
+
+}
+
+.greenSquare{
+    width: 556px;
+    height: 370px;
+    background-color: #C4D502;
+    margin-top: 41px;
+    position: relative;
+}
+
+.descriptionImg img{
+    width: 556px;
+    position: absolute;
+    left: 98px;
+    bottom: 40px;
+}
+
+/* text */
+
+.descriptionText{
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptionText h1{
+    margin-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.descriptionText p{
+    margin-bottom: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.descriptionTextMobile{
+    display: none;
+}
+
+/* === Principles and ideas=== */
+
+.ourIdeas{
+    background-color: #FAFAFA;
+}
+.containerForIdeas{
+    width: 1205px;
+    margin: auto;
+    padding: 62px 0;
+}
+
+.ideasText h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 23px;
+    font-weight: 400;   
+}
+
+.ideasText h3 ~ p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+
+    margin: 24px 0;
+}
+
+.principlesWheel{
+    display: flex;
+    flex-direction: column;
+}
+
+.principle{
+    width: 458px;
+    height: 184px;
+    margin-top: 12px;
+    padding: 40px 45px 40px 24px;
+}
+
+.containerForPrinciplesWheel{
+    display: flex;
+}
+
+.purpleSquare{
+    width: 751px;
+    height: 467px;
+    background-color: #5C49DD;
+    position: relative;
+    margin-top: 15px;
+}
+
+.purpleSquare > img{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    z-index: 1;
+}
+
+.principle_2{
+    background-color: #5C49DD;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.principle h4{
+    font-family: 'Macondo', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.principle p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+/* === Our graduates === */
+
+.graduates{
+    background-color: #F0D02B;
+    margin-bottom: 100px;
+    padding-top: 80px;
+}
+
+.universities{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 78px;
+}
+
+.graduate{
+    display: flex;
+}
+
+.positionForGraduateImg{
+    height: 455px;
+    width: 685px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.positionForGraduateImg > img{
+    width: 556px;
+    position: absolute;
+    top: 0;
+    left: 99px;
+}
+
+.navForGraduatesWheel{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navForGraduatesWheel img{
+    width: 48px;
+}
+
+.graduatesText h5{
+    font-family: 'Macondo', sans-serif, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+
+    margin-bottom: 45px;
+}
+
+.graduatesText p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.graduates h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+
+    margin-bottom: 70px;
+}
+
+.navOurIdeas{
+    display: none;
+}
+
+/* === club === */
+
+.club{
+    padding: 86px 0;
+}
+
+.container-club{
+    display: flex;
+}
+
+.clubText{
+    width: 480px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-right: 92px;
+}
+
+.clubText h5{
+    font-family: 'Macondo', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+
+    margin-bottom: 50px;
+}
+
+.clubText p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+
+    margin-bottom: 18px;
+}
+
+/* === Info === */
+
+/* === suggestions === */
+
+.infoSuggestions{
+    background-color: #F7F2EF;
+}
+
+.container-info{
+    height: 220px;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.container-info img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.infoText{
+    width: 430px;
+}
+
+.infoText h4{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    padding-bottom: 20px;
+    height: 100%;
+}
+
+/* === Eduation logos === */
+
+.container_info{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info-logo{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 57px 0;
+}
+
+.info-logo__img{
+    margin-right: 12px;
+}
+
+.info-logo__text{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+}
+
+
+/* ===== FOOTER ===== */
+
+.footer{
+    background-color: #0C1219;
+
+    padding: 80px 0;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    color: #FFFFFF;
+
+    margin-bottom: 24px;
+}
+
+.contacts-item{
+    display: flex;
+
+    margin-top: 24px;
+}
+
+.contacts-item__logo{
+    width: 24px;
+    margin-right: 16px;
+}
+
+.contacts-item__text{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.contacts-item__text_subtitle{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ===== MEDIA ===== */
+
+.burger-menu{
+    display: none;
+}
+
+
+@media (max-width: 1200px){
+
+    /* === HEADER === */
+
+    .container{
+        width: 100%;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    
+    .menu, .search{
+        display: none;
+    }
+    
+    .burger-menu{
+        display: block;
+        margin-left: auto;
+    }
+
+    .burger-menu__icon{
+        width: 40px;
+    }
+
+    /* === News === */
+
+    .newsItem{
+        width: 100%;
+        height: 344px;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    .newsItem4 img{
+        top: 0;
+        right: 0;
+    }
+
+    .newsHeading4, .newsText4{
+        width: auto;
+    }
+
+    .newsTexts{
+        margin-top: auto;
+    }
+
+    /* === About === */
+
+    .statistic{
+        flex-wrap: wrap;
+
+        margin-bottom: 40px;
+    }
+
+    .statItem{
+        margin: 0;
+        padding-right: 16px;
+        width: 33.3%;
+    }
+
+    .Description{
+        flex-direction: column;
+    }
+
+    .descriptionTextMobile{
+        display: inline;
+    }
+
+    .descriptionTextMobile h1{
+        margin-bottom: 40px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+    .descriptionText h1{
+        display: none;
+    }
+
+    .descriptionImg img{
+        width: calc(100vw - 48px);
+        left: 16px;
+        bottom: 16px;
+        position: relative;
+    }
+
+        
+    .greenSquare{
+        height: auto;
+        width: 75vw;
+        background-color: #C4D502;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    
+    /* === OUR IDEAS === */
+
+    .ourIdeas{
+        padding: 0px 16px;
+    }
+
+    .containerForIdeas{
+        width: auto;
+    }
+
+    .principle{
+        margin-top: 0;
+        width: auto;
+        height: auto;
+    }
+
+    .principle_1, .principle_3{
+        display: none;
+    }
+
+    .containerForPrinciplesWheel{
+        flex-direction: column-reverse;
+    }
+
+    .purpleSquare{
+        width: auto;
+        height: auto;
+    }
+
+    .purpleSquare > img{
+        width: calc(100vw - 48px);
+        right: 0px;
+        bottom: -16px;
+        position: relative;
+    }
+
+    .navOurIdeas{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    .navOurIdeas img{
+        width: 48px;
+    }
+
+    /* === graduates === */
+
+    .universities{
+        overflow: clip ;
+    }
+
+    .universityItem{
+        min-width: 20%;
+        height: auto;
+        text-align: center;
+        position: relative;
+    }
+
+    .universityItem > Img{
+        width: 70%;
+    }
+
+    .universityItem_3:after{
+        content: "";
+        width: 100%;
+        height: 12px;
+        background: #FB4803;
+        position: absolute;
+        bottom: -16px;
+        right: 0;
+        z-index: 1;
+    }
+
+    .graduate{
+        flex-direction: column-reverse;
+    }
+
+    .graduatesText{
+        margin-bottom: 24px;
+    }
+
+    .positionForGraduateImg{
+        width: auto;
+        height: calc(100vw - 16px - 48px - 100px);
+    }
+
+    .positionForGraduateImg > img{
+        position: static;
+        width: calc(100% - 48px);
+    }
+
+    .navForGraduatesWheel{
+        left: auto;
+        right: 0;
+    }
+
+    /* === club === */
+
+    .club{
+        display: none;
+    }
+
+    /* === info === */
+
+    .infoSuggestions img{
+        display: none;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 630px){
+
+    /* === News === */
+
+    .News h3{
+        font-size: 26px;
+    }
+
+    .newsHeadings{
+        font-size: 23px;
+    }
+
+    .newsTexts{
+        font-size: 14px;
+    }
+
+    /* === About === */
+
+    .About h3{
+        font-size: 16px;
+    }
+
+    .statItem p{
+        font-style: 12px;
+    }
+
+    .descriptionText p{
+        font-size: 16px;
+    }
+
+    /* === Our Ideas === */
+    
+    .ideasText h3{
+        font-size: 26px;
+    }
+
+    .ideasText h3 ~ p{
+        font-size: 20px;
+    }
+
+    .principle h4{
+        font-size: 23px;
+    }
+
+    .principle p{
+        font-size: 16px;
+    }
+
+    /* === Graduates === */
+
+    .graduates h3{
+        font-size: 26px;
+    }
+
+    .graduatesText h5{
+        font-size: 23px;
+    }
+
+    .graduatesText p{
+        font-size: 16px;
+    }
+
+    /* === Info === */
+
+    .infoText h4{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .header {
+        padding: 10px;
+    }
+
+    /* button */
+
+    .btnBlack{
+        width: calc(100vw - 32px);
+        text-align: center;
+    }
+
+    .btnPurple{
+        width: calc(100vw - 32px);
+        text-align: center;
+    }
+
+    /* === Info === */
+
+    .info-logo{
+        width: 50%;
+    }
+}
